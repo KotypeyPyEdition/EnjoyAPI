@@ -1,5 +1,6 @@
 import aiohttp
 from discord import Client
+import json
 
 class EnjoyAPIException(Exception): pass
 
@@ -20,9 +21,9 @@ class EnjoyAPI:
         """ Получить данные от пользователя """
         if not userID: raise EnjoyAPIException('Не указан ID пользователя')
 
-        async with self.bot.session.get(f'${self.endpoint}/check/{userID}', headers = { 'Authorization': self.token}) as res:
+        async with self.bot.session.get(f'{self.endpoint}/check/{userID}', headers = { 'Authorization': self.token}) as res:
             res: aiohttp.ClientResponse
-            if res.status != 200 or res.status != 404: raise EnjoyAPIException('Призойшла внутреняя ошибка')
+            if res.status not in [200, 404]: raise EnjoyAPIException(f'Призойшла внутреняя ошибка, статус: {res.status}')
 
 
             return await res.json(encoding='UTF-8')

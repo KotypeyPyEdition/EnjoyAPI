@@ -11,7 +11,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 setup(
     name='EnjoyAPI',
     packages=['EnjoyAPI'],
-    version='1.1',
+    version='1.3',
     description='Ассинхронный клиент для API EnjoyMickeyBot',
     author='Kotypey',
     author_email='Kotypey@gmail.com',
