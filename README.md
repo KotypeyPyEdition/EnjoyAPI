@@ -4,7 +4,21 @@
 
 Установка:
 
-    
+
+
+
+
+  Через GIT:
+
+```shell
+$ pip install git+https://github.com/KotypeyPyEdition/EnjoyAPI
+```
+
+Через Pypi:
+
+```shell
+$ pip install EnjoyAPI
+```
 
 Пример:
 
