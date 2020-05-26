@@ -44,4 +44,4 @@ bot.run('тут токен бота')
 
 
 
-Ключ не давали, не тестил, если будут проблемы/вопросы [Issues](https://github.com/KotypeyPyEdition/EnjoyAPI/issues)
+если будут проблемы/вопросы [Issues](https://github.com/KotypeyPyEdition/EnjoyAPI/issues)
